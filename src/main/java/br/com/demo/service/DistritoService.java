@@ -10,7 +10,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
 
-@RegisterRestClient    //informa ao framework que esse servico pode ser injetado
+@RegisterRestClient(configKey = "distritos-api")    //informa ao framework que esse servico pode ser injetado
 @Path("/distritos")    //recurso a ser acessado dentro da api
 public interface DistritoService {   //Essa interface será usada para fazer as requisicoes em uma api externa
 

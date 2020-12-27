@@ -12,7 +12,7 @@ import javax.ws.rs.core.MediaType;
 import java.util.List;
 
 @Path("/distritos")
-public class DistritoResource {
+public class DistritoController {
 
     @Inject
     @RestClient
