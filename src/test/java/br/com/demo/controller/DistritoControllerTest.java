@@ -9,7 +9,8 @@ public class DistritoControllerTest {
 
     @Test
     public void test200(){
-        RestAssured.given().get("distritos").then().statusCode(200);
+        RestAssured.given().get("/distritos").then().statusCode(200);
     }
+
 
 }

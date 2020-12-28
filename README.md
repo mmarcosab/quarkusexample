@@ -1,6 +1,7 @@
 <p> Esse exemplo mostra como criar uma aplicação usando quarkus com as seguintes funcionalidades:  </p>
 
 - consumir api externa;
+- conexão combanco de dados e persistência de objetos;
 
 <p> Para rodar a aplicação localmente: </p>
 
