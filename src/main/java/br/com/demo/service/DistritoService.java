@@ -1,7 +1,7 @@
 package br.com.demo.service;
 
 
-import br.com.demo.entity.Distrito;
+import br.com.demo.gateway.in.distritos.Distrito;
 import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
 
 import javax.ws.rs.GET;

@@ -1,4 +1,4 @@
-package br.com.demo.entity;
+package br.com.demo.gateway.in.distritos;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,9 +9,9 @@ import javax.json.bind.annotation.JsonbProperty;
 
 @Getter
 @Setter
-@AllArgsConstructor
 @NoArgsConstructor
-public class Microrregiao {
+@AllArgsConstructor
+public class RegiaoImediata {
 
     @JsonbProperty(value = "id")
     private int id;
@@ -19,7 +19,7 @@ public class Microrregiao {
     @JsonbProperty(value = "nome")
     private String nome;
 
-    @JsonbProperty(value = "mesorregiao")
-    private Mesorregiao mesorregiao;
+    @JsonbProperty(value = "regiao-intermediaria")
+    private RegiaoIntermediaria regiaoIntermediaria;
 
 }

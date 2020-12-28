@@ -1,6 +1,6 @@
 package br.com.demo.controller;
 
-import br.com.demo.entity.Distrito;
+import br.com.demo.gateway.in.distritos.Distrito;
 import br.com.demo.service.DistritoService;
 import org.eclipse.microprofile.rest.client.inject.RestClient;
 
@@ -16,7 +16,7 @@ public class DistritoController {
 
     @Inject
     @RestClient
-    DistritoService distritoService;
+    private DistritoService distritoService;
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)

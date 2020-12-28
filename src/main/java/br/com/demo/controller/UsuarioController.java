@@ -1,7 +1,11 @@
 package br.com.demo.controller;
 
-import br.com.demo.gateway.database.data.UsuarioData;
+import br.com.demo.entity.Usuario;
+import br.com.demo.gateway.UsuarioGateway;
+import br.com.demo.gateway.database.converter.UsuarioConverter;
+import br.com.demo.gateway.database.repository.UsuarioRepository;
 
+import javax.inject.Inject;
 import javax.transaction.Transactional;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.POST;
@@ -11,11 +15,13 @@ import javax.ws.rs.core.MediaType;
 @Path("/usuarios")
 public class UsuarioController {
 
+    @Inject
+    private UsuarioGateway usuarioGateway;
+
     @POST
-    @Transactional   //retirar essa camada daqui
     @Consumes(MediaType.APPLICATION_JSON)
-    public void inserir(UsuarioData usuario){  //retirar essa camada daqui tambem
-        UsuarioData.persist(usuario);
+    public void inserir(Usuario usuario){
+        usuarioGateway.save(usuario);
     }
 
 }
