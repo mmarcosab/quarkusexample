@@ -2,6 +2,7 @@
 
 - consumir api externa;
 - conexão combanco de dados e persistência de objetos;
+- documentação da camada rest com swagger;
 
 <p> Para rodar a aplicação localmente: </p>
 
