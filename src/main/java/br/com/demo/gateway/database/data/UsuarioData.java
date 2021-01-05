@@ -14,7 +14,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 @Entity
 @Table(name = "usuario")
-public class UsuarioData extends PanacheEntityBase { // PanacheEntityBase fornece métodos estáticos para acesso ao banco de dados
+public class UsuarioData {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
